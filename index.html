@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Collection | Premium Shoes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PREMIUM COLLECTION</div>
+  <p>Premium Shoes</p>
+</header>
+
+<section class="hero">
+  <h1>Premium Shoes</h1>
+  <p>Premium Collection • ₹2,499</p>
+  <div class="offer">50% Advance Booking — ₹1,249.50</div>
+</section>
+
+<section class="products">
+
+  <div class="product">
+    <img src="shoe1.jpeg" alt="Premium Shoe 1">
+    <h2>Premium White Blue</h2>
+    <p>₹2,499</p>
+  </div>
+
+  <div class="product">
+    <img src="shoe2.jpeg" alt="Premium Shoe 2">
+    <h2>Premium Collection 2</h2>
+    <p>₹2,499</p>
+  </div>
+
+  <div class="product">
+    <img src="shoe3.jpeg" alt="Premium Shoe 3">
+    <h2>Premium Collection 3</h2>
+    <p>₹2,499</p>
+  </div>
+
+  <div class="product">
+    <img src="shoe4.jpeg" alt="Premium Shoe 4">
+    <h2>Premium Collection 4</h2>
+    <p>₹2,499</p>
+  </div>
+
+  <div class="product">
+    <img src="shoe5.jpeg" alt="Premium Shoe 5">
+    <h2>Premium Collection 5</h2>
+    <p>₹2,499</p>
+  </div>
+
+</section>
+
+<section class="payment">
+  <h2>50% Advance Payment</h2>
+  <p>Scan QR code to pay ₹1,249.50</p>
+
+  <img src="payment_qr.png" class="qr" alt="UPI Payment QR">
+
+  <p class="upi">
+    UPI: BHARATPE.9JOM0Y1GSI693577@unitype
+  </p>
+
+  <p class="small">
+    Payment ke baad UTR / Transaction ID order form mein enter karein.
+  </p>
+</section>
+
+<section class="order-section">
+
+  <h2>Place Your Order</h2>
+
+  <form id="orderForm">
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Full Name"
+      required
+    >
+
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Mobile Number"
+      pattern="[0-9]{10}"
+      required
+    >
+
+    <textarea
+      name="address"
+      placeholder="Full Address"
+      rows="4"
+      required
+    ></textarea>
+
+    <input
+      type="text"
+      name="city"
+      placeholder="City"
+      required
+    >
+
+    <input
+      type="text"
+      name="state"
+      placeholder="State"
+      required
+    >
+
+    <input
+      type="text"
+      name="pincode"
+      placeholder="PIN Code"
+      pattern="[0-9]{6}"
+      required
+    >
+
+    <select name="shoe" required>
+      <option value="">Select Shoe</option>
+      <option value="Premium White Blue">Premium White Blue</option>
+      <option value="Premium Collection 2">Premium Collection 2</option>
+      <option value="Premium Collection 3">Premium Collection 3</option>
+      <option value="Premium Collection 4">Premium Collection 4</option>
+      <option value="Premium Collection 5">Premium Collection 5</option>
+    </select>
+
+    <select name="size" required>
+      <option value="">Select Size</option>
+      <option value="6">Size 6</option>
+      <option value="7">Size 7</option>
+      <option value="8">Size 8</option>
+      <option value="9">Size 9</option>
+      <option value="10">Size 10</option>
+      <option value="11">Size 11</option>
+    </select>
+
+    <input
+      type="number"
+      name="quantity"
+      value="1"
+      min="1"
+      placeholder="Quantity"
+      required
+    >
+
+    <input
+      type="text"
+      name="transactionId"
+      placeholder="UPI Transaction ID / UTR"
+    >
+
+    <button type="submit">
+      SUBMIT ORDER
+    </button>
+
+  </form>
+
+  <div id="orderStatus"></div>
+
+</section>
+
+<footer>
+  <p>© 2026 Premium Collection</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
